@@ -7,6 +7,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { BG_LOGO } from "../utils/Constants";
 
 const Login = () => {
   const [isSignInForm, setIsSignUpForm] = useState(true);
@@ -95,8 +96,7 @@ const Login = () => {
       <div>
         <img
           className="absolute"
-          src="
-https://assets.nflxext.com/ffe/siteui/vlv3/a56dc29b-a0ec-4f6f-85fb-50df0680f80f/2f8ae902-8efe-49bb-9a91-51b6fcc8bf46/IN-en-20240617-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+          src={BG_LOGO}
           alt="backgound-logo"
         />
       </div>
